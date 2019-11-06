@@ -6,4 +6,4 @@ Testbed One is the place to try out new stuffs for IWXXM which could be too craz
 
 # See also
 * The [IWXXM repository](https://github.com/wmo-im/iwxxm) contains schemas, schematron rules and associated files of IWXXM. 
-* The [IWXXM modelling repository](https://github.com/wmo-im/iwxxm-modelling) contains UML model of IWXXM and tools that were used for preparing schemas, schematron rules and associated files in the IWXXM repository. 
+* The [IWXXM modelling repository](https://github.com/wmo-im/iwxxm-modelling) contains UML model of IWXXM and tools that were used for preparing files in the IWXXM repository. 
