@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iwxxm:WAFCSignificantWeatherForecast 
+    xmlns:iwxxm="http://icao.int/iwxxm/3.0"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:aixm="http://www.aixm.aero/schema/5.1.1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.aixm.aero/schema/5.1.1 http://www.aixm.aero/schema/5.1.1/AIXM_Features.xsd
+    http://icao.int/iwxxm/3.0 http://schemas.wmo.int/iwxxm/3.0/iwxxm.xsd"
+    gml:id="uuid.ce3b61b9-d360-4da1-83b9-67e668406869" reportStatus="NORMAL" permissibleUsage="OPERATIONAL">
+    
+    <gml:identifier codeSpace="http://wafc/sigwxfc">3ae2138f-12d8-4392-b4d7-7a2d2e2e55d8</gml:identifier>
+    
+    <iwxxm:boundingPeriod>
+        <gml:TimePeriod gml:id="uuid.76096601-6d6c-41f8-ad23-a25b1a8f3658">
+            <gml:beginPosition>2001-01-31T00:00:00Z</gml:beginPosition>
+            <gml:endPosition>2001-02-01T18:00:00Z</gml:endPosition>
+        </gml:TimePeriod>
+    </iwxxm:boundingPeriod>
+    
+    <iwxxm:boundingVolume>
+        <gml:lowerCorner srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">-90 -180</gml:lowerCorner>
+        <gml:upperCorner srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/crs/EPSG/0/4326">90 180</gml:upperCorner>
+        <iwxxm:upperElevation uom="FL">600</iwxxm:upperElevation>
+        <iwxxm:upperVerticalReference>STD</iwxxm:upperVerticalReference>
+        <iwxxm:lowerElevation uom="FL">100</iwxxm:lowerElevation>
+        <iwxxm:lowerVerticalReference>STD</iwxxm:lowerVerticalReference>
+    </iwxxm:boundingVolume>
+    
+    <iwxxm:phenomenaList xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/JETSTREAM"/>
+    <iwxxm:phenomenaList xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/TURBULENCE"/>
+    <iwxxm:phenomenaList xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/CLOUD"/>
+    <iwxxm:phenomenaList xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/TROPOPAUSE"/>
+    <iwxxm:phenomenaList xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/RADIATION"/>
+    <iwxxm:phenomenaList xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/SANDSTORM"/>
+    <iwxxm:phenomenaList xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/TROPICALCYCLONE"/>
+    <iwxxm:phenomenaList xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/VOLCANO"/>
+    
+    <iwxxm:issueTime>
+        <gml:TimeInstant gml:id="uuid.4b5156bd-32e1-4fc9-a8f0-8f6b6c96e544">
+            <gml:timePosition>2001-01-30T21:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+    </iwxxm:issueTime>
+    
+    <iwxxm:originatingCentre xlink:href="http://codes.wmo.int/common/centre/EGRR"/>
+    
+    <iwxxm:phenomenonCategory>weatherForecasts</iwxxm:phenomenonCategory>
+    
+    <iwxxm:phenomenonBaseTime>
+        <gml:TimeInstant gml:id="uuid.825a0f0f-0b48-4a0b-9270-7f1075fed151">
+            <gml:timePosition>2001-01-30T18:00:00Z</gml:timePosition>
+        </gml:TimeInstant>
+    </iwxxm:phenomenonBaseTime>
+    
+    <!-- In this example as the collective contains multiple forecast the phenomenonTime will be shown with individual feature
+    <iwxxm:phenomenonTime/>
+    -->
+
+    <!-- A Jet Stream Object -->
+    <iwxxm:feature>
+        <iwxxm:MeteorologicalFeature gml:id="uuid.8c3d3467-e398-4627-ab23-f9e57c2215b5">
+            <gml:identifier codeSpace="http://wafc/sigwxobj">eb324455-236c-46f8-b80d-c6d42c3a634c</gml:identifier>
+            <iwxxm:phenomenonTime>
+                <gml:TimeInstant gml:id="uuid.26328dbd-c763-4fd4-9b3c-40a6400795f0">
+                    <gml:timePosition>2001-01-31T00:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </iwxxm:phenomenonTime>
+            <iwxxm:phenomenon xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/JETSTREAM"/>
+            <iwxxm:phenomenonGeometry>
+                <gml:Curve gml:id="uuid.7b5a197a-d9bf-4f3b-ba36-701fe019b6d2" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                    <gml:segments>
+                        <gml:CubicSpline>
+                            <gml:posList>35.4 -104.7 36.1 -101.6 36.6 -99.6 36.9 -97.7 37.4 -94.9 38.3 -92.3 39.2 -90.3 40.7 -88.1 41.5 -86.3 42.0 -82.7 41.9 -78.9</gml:posList>
+                            <gml:vectorAtStart>1.0 2.0</gml:vectorAtStart>
+                            <gml:vectorAtEnd>2.0 3.0</gml:vectorAtEnd>
+                        </gml:CubicSpline>
+                    </gml:segments>
+                </gml:Curve>
+            </iwxxm:phenomenonGeometry>
+            <iwxxm:phenomenonProperty>
+                <iwxxm:WAFCJetStreamWindSymbol gml:id="uuid.69a048d7-ba8d-47d5-9e5d-15c658f99e87">
+                    <iwxxm:location>
+                        <iwxxm:ElevatedPoint gml:id="uuid.2efe3eff-3ef0-4817-b2ab-b670417ebb6a" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                            <gml:pos>36.1 -101.6</gml:pos>
+                            <iwxxm:elevation uom="M">10668</iwxxm:elevation>
+                            <iwxxm:verticalReference>MSL</iwxxm:verticalReference>
+                        </iwxxm:ElevatedPoint>
+                    </iwxxm:location>
+                    <iwxxm:windSpeed uom="m/s">51.5</iwxxm:windSpeed>
+                </iwxxm:WAFCJetStreamWindSymbol>
+            </iwxxm:phenomenonProperty>
+            <iwxxm:phenomenonProperty>
+                <iwxxm:WAFCJetStreamWindSymbol gml:id="uuid.1bf0cb18-199d-4467-865d-3e8c4923de96">
+                    <iwxxm:location>
+                        <iwxxm:ElevatedPoint gml:id="uuid.b40fe04a-174f-4dac-94b4-987c4d729de4" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                            <gml:pos>36.9 -97.7</gml:pos>
+                            <iwxxm:elevation uom="M">15240</iwxxm:elevation>
+                            <iwxxm:verticalReference>MSL</iwxxm:verticalReference>
+                        </iwxxm:ElevatedPoint>
+                    </iwxxm:location>
+                    <iwxxm:windSpeed uom="m/s">61.8</iwxxm:windSpeed>
+                    <iwxxm:IsotachUpperElevation uom="M">15240</iwxxm:IsotachUpperElevation>
+                    <iwxxm:IsotachUpperVerticalReference>MSL</iwxxm:IsotachUpperVerticalReference>
+                    <iwxxm:IsotachLowerElevation uom="M">13716</iwxxm:IsotachLowerElevation>
+                    <iwxxm:IsotachLowerVerticalReference>MSL</iwxxm:IsotachLowerVerticalReference>
+                </iwxxm:WAFCJetStreamWindSymbol>
+            </iwxxm:phenomenonProperty>
+            <iwxxm:phenomenonProperty>
+                <iwxxm:WAFCJetStreamWindSymbol gml:id="uuid.f9847b29-2d86-4bda-b69b-d3fae1e29e43">
+                    <iwxxm:location>
+                        <iwxxm:ElevatedPoint gml:id="uuid.1b2dd415-451d-4f04-bd67-794ed859f845" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                            <gml:pos>38.3 -92.3</gml:pos>
+                            <iwxxm:elevation uom="M">15240</iwxxm:elevation>
+                            <iwxxm:verticalReference>MSL</iwxxm:verticalReference>
+                        </iwxxm:ElevatedPoint>
+                    </iwxxm:location>
+                    <iwxxm:windSpeed uom="m/s">51.5</iwxxm:windSpeed>
+                </iwxxm:WAFCJetStreamWindSymbol>
+            </iwxxm:phenomenonProperty>
+            <iwxxm:phenomenonProperty>
+                <iwxxm:WAFCJetStreamWindSymbol gml:id="uuid.06af45b6-4852-41e0-b211-5aa6daa03f83">
+                    <iwxxm:location>
+                        <iwxxm:ElevatedPoint gml:id="uuid.f26f3ec6-ec91-4770-b04e-f9097a02cb19" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                            <gml:pos>40.7 -88.1</gml:pos>
+                            <iwxxm:elevation uom="M">15240</iwxxm:elevation>
+                            <iwxxm:verticalReference>MSL</iwxxm:verticalReference>
+                        </iwxxm:ElevatedPoint>
+                    </iwxxm:location>
+                    <iwxxm:windSpeed uom="m/s">61.8</iwxxm:windSpeed>
+                    <iwxxm:IsotachUpperElevation uom="M">16154</iwxxm:IsotachUpperElevation>
+                    <iwxxm:IsotachUpperVerticalReference>MSL</iwxxm:IsotachUpperVerticalReference>
+                    <iwxxm:IsotachLowerElevation uom="M">14326</iwxxm:IsotachLowerElevation>
+                    <iwxxm:IsotachLowerVerticalReference>MSL</iwxxm:IsotachLowerVerticalReference>
+                </iwxxm:WAFCJetStreamWindSymbol>
+            </iwxxm:phenomenonProperty>
+            <iwxxm:phenomenonProperty>
+                <iwxxm:WAFCJetStreamWindSymbol gml:id="uuid.c6ccf151-6a61-479d-b316-bdab7a27bfcc">
+                    <iwxxm:location>
+                        <iwxxm:ElevatedPoint gml:id="uuid.2e67726d-b5f4-4805-bae8-a45f18c34d22" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                            <gml:pos>42.0 -82.7</gml:pos>
+                            <iwxxm:elevation uom="M">9144</iwxxm:elevation>
+                            <iwxxm:verticalReference>MSL</iwxxm:verticalReference>
+                        </iwxxm:ElevatedPoint>
+                    </iwxxm:location>
+                    <iwxxm:windSpeed uom="m/s">51.5</iwxxm:windSpeed>
+                </iwxxm:WAFCJetStreamWindSymbol>
+            </iwxxm:phenomenonProperty>
+        </iwxxm:MeteorologicalFeature>
+    </iwxxm:feature>
+        
+    <!-- A Turbulence Object -->
+    <iwxxm:feature>
+        <iwxxm:MeteorologicalFeature gml:id="uuid.aaaf9f38-dc4c-410d-b056-c130a049bde9">
+            <gml:identifier codeSpace="http://wafc/sigwxobj">b3d925c1-a81e-474c-ae3c-4f6281ec5d8a</gml:identifier>
+            <iwxxm:phenomenonTime>
+                <gml:TimeInstant gml:id="uuid.9d6bd805-a4a0-42e0-b19b-41ede85161a3">
+                    <gml:timePosition>2001-01-31T00:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </iwxxm:phenomenonTime>
+            <iwxxm:phenomenon xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/TURBULENCE"/>
+            <iwxxm:phenomenonGeometry>
+                <iwxxm:ElevatedVolume gml:id="uuid.138a9477-e1fd-43e2-8060-0eb6a093d0eb" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                    <gml:patches>
+                        <gml:PolygonPatch>
+                            <gml:exterior>
+                                <gml:Ring>
+                                    <gml:curveMember>
+                                        <gml:Curve gml:id="uuid.b9ecc1d0-e336-4698-8f7a-43f947901a7d" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                                            <gml:segments>
+                                                <gml:CubicSpline>
+                                                    <gml:posList>44.5 -96.8 44.6 -94.2 46.0 -89.1 44.8 -75.8 45.2 -63.5 44.6 -57.2 44.4 -50.0 44.8 -34.3 46.8 -32.8 51.5 -38.9 52.2 -47.1 52.6 -59.4 54.6 -69.0 55.3 -84.3 52.2 -91.6 47.0 -97.7 44.5 -96.8</gml:posList>
+                                                    <gml:vectorAtStart>1.0 2.0</gml:vectorAtStart>
+                                                    <gml:vectorAtEnd>3.0 4.0</gml:vectorAtEnd>
+                                                </gml:CubicSpline>
+                                            </gml:segments>
+                                        </gml:Curve>
+                                    </gml:curveMember>
+                                </gml:Ring>
+                            </gml:exterior>
+                        </gml:PolygonPatch>
+                    </gml:patches>
+                    <iwxxm:upperElevation uom="M">12192.0</iwxxm:upperElevation>
+                    <iwxxm:upperVerticalReference>MSL</iwxxm:upperVerticalReference>
+                    <iwxxm:lowerElevation uom="M">10363.2</iwxxm:lowerElevation>
+                    <iwxxm:lowerVerticalReference>MSL</iwxxm:lowerVerticalReference>
+                </iwxxm:ElevatedVolume>
+            </iwxxm:phenomenonGeometry>
+            <iwxxm:phenomenonProperty>
+                <iwxxm:DegreeOfTurbulence xlink:href="http://codes.wmo.int/bufr4/codeflag/0-11-030/MODERATE"/>
+            </iwxxm:phenomenonProperty>
+        </iwxxm:MeteorologicalFeature>
+    </iwxxm:feature>
+
+    <!-- A Cloud Object -->
+    <iwxxm:feature>
+        <iwxxm:MeteorologicalFeature gml:id="uuid.6f770e58-488b-4d89-b828-4c952b7d6a65">
+            <iwxxm:phenomenonTime>
+                <gml:TimeInstant gml:id="uuid.b020f2d4-b3a5-4cee-a45e-2356beb4edf6">
+                    <gml:timePosition>2001-01-31T00:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </iwxxm:phenomenonTime>
+            <iwxxm:phenomenon xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/CLOUD"/>
+            <iwxxm:phenomenonGeometry>
+                <iwxxm:ElevatedVolume gml:id="uuid.6b082591-74f4-46fe-9d13-05e76e34a0d8" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                    <gml:patches>
+                        <gml:PolygonPatch>
+                            <gml:exterior>
+                                <gml:Ring>
+                                    <gml:curveMember>
+                                        <gml:Curve gml:id="uuid.51ab4f45-d049-43fc-a17e-93c5a178e92b" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                                            <gml:segments>
+                                                <gml:CubicSpline>
+                                                    <gml:posList>26.7 -84.7 24.2 -84.2 19.0 -79.6 19.6 -74.9 23.0 -72.2 28.2 -72.2 31.7 -77.9 28.6 -85.1 26.7 -84.7</gml:posList>
+                                                    <gml:vectorAtStart>1.0 2.0</gml:vectorAtStart>
+                                                    <gml:vectorAtEnd>3.0 4.0</gml:vectorAtEnd>
+                                                </gml:CubicSpline>
+                                            </gml:segments>
+                                        </gml:Curve>
+                                    </gml:curveMember>
+                                </gml:Ring>
+                            </gml:exterior>
+                        </gml:PolygonPatch>
+                    </gml:patches>
+                    <iwxxm:upperElevation uom="M">12496.8</iwxxm:upperElevation>
+                    <iwxxm:upperVerticalReference>MSL</iwxxm:upperVerticalReference>
+                    <iwxxm:lowerElevation xsi:nil="true" nilReason="http://codes.wmo.int/common/nil/inapplicable"/>
+                </iwxxm:ElevatedVolume>
+            </iwxxm:phenomenonGeometry>
+            <iwxxm:phenomenonProperty>
+                <iwxxm:CloudDistribution xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-008/ISOL_EMBD"/>
+                <iwxxm:CloudType xlink:href="http://codes.wmo.int/bufr4/codeflag/0-20-012/CB"
+            </iwxxm:phenomenonProperty>
+        </iwxxm:MeteorologicalFeature>
+    </iwxxm:feature>
+
+    <!-- A Tropopause Object -->
+    <iwxxm:feature>
+        <iwxxm:MeteorologicalFeature gml:id="uuid.4cefc622-5784-49db-9d3d-7463c7a05dc6">
+            <gml:identifier codeSpace="http://wafc/sigwxobj">6e1ee07d-bc2c-4984-8094-1fb3c4ee7d83</gml:identifier>
+            <iwxxm:phenomenonTime>
+                <gml:TimeInstant gml:id="uuid.3a38c7eb-da5f-4459-8cc3-b5cf2e475658">
+                    <gml:timePosition>2001-01-31T00:00:00Z</gml:timePosition>
+                </gml:TimeInstant>
+            </iwxxm:phenomenonTime>
+            <iwxxm:phenomenon xlink:href="http://codes.wmo.int/bufr4/codeflag/0-28-011/TROPOPAUSE"/>
+            <iwxxm:phenomenonGeometry>
+                <gml:Polygon gml:id="uuid.90d73d97-bebc-42ec-b071-36c8da98111c" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                    <gml:exterior>
+                        <gml:Ring>
+                            <gml:curveMember>
+                                <gml:Curve gml:id="uuid.9cffb046-96ca-4f3b-96bf-6cfd34e4e064" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
+                                    <gml:segments>
+                                        <gml:CubicSpline>
+                                            <gml:posList>26.7 -84.7 24.2 -84.2 19.0 -79.6 19.6 -74.9 23.0 -72.2 28.2 -72.2 31.7 -77.9 28.6 -85.1 26.7 -84.7</gml:posList>
+                                            <gml:vectorAtStart>1.0 2.0</gml:vectorAtStart>
+                                            <gml:vectorAtEnd>3.0 4.0</gml:vectorAtEnd>
+                                        </gml:CubicSpline>
+                                    </gml:segments>
+                                </gml:Curve>
+                            </gml:curveMember>
+                        </gml:Ring>
+                    </gml:exterior>
+                </gml:Polygon>
+            </iwxxm:phenomenonGeometry>
+            <iwxxm:phenomenonProperty>
+                <iwxxm:StringWithNilReason xlink:href="http://codes.wmo.int/soft-typed/tropopauseHeight">12345</iwxxm:StringWithNilReason>
+            </iwxxm:phenomenonProperty>
+        </iwxxm:MeteorologicalFeature>
+    </iwxxm:feature>
+    
+    <!-- An online feature -->
+    <iwxxm:feature xlink:href="http://online-resource-of-features/object-reference=gml:identifier"/>
+    
+</iwxxm:WAFCSignificantWeatherForecast>
