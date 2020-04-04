@@ -47,32 +47,16 @@ Describes the horizontal wind speed and direction at the point and optionally th
 		<complexContent>
 			<extension base="gml:AbstractGMLType">
 				<sequence>
-					<element name="location">
+					<element name="location" type="iwxxm:ElevatedPointPropertyType">
 						<annotation>
 							<documentation>Position of the wind symbol.</documentation>
 						</annotation>
-						<complexType>
-							<complexContent>
-								<extension base="gml:AbstractMemberType">
-									<sequence>
-										<element ref="iwxxm:ElevatedPoint"></element>
-									</sequence>
-								</extension>
-							</complexContent>
-						</complexType>
 					</element>
 					<element name="windSpeed" type="iwxxm:VelocityWithNilReasonType">
 						<annotation>
 							<documentation>Horizontal wind speed at the indicated position.
 
 Wind speeds shall be provided in unit of measurer "m/s" (meters per second).</documentation>
-						</annotation>
-					</element>
-					<element name="windDirection" type="iwxxm:AngleWithNilReasonType" minOccurs="0" maxOccurs="1">
-						<annotation>
-							<documentation>Horizontal wind direction at the indicated point.
-
-Wind direction shall be given in degrees from true North. Plane angle unit of measure (uom) is "deg".  A true north wind is indicated with a direction of 360. Calm wind is indicated with a direction of 0.</documentation>
 						</annotation>
 					</element>
 					<element nillable="true" name="IsotachUpperElevation" type="iwxxm:ValDistanceVerticalType" minOccurs="0" maxOccurs="1">
@@ -102,6 +86,86 @@ Wind direction shall be given in degrees from true North. Plane angle unit of me
 	<complexType name="WAFCJetStreamWindSymbolPropertyType">
 		<sequence minOccurs="0">
 			<element ref="iwxxm:WAFCJetStreamWindSymbol"></element>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"></attributeGroup>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"></attributeGroup>
+	</complexType>
+	<element name="Volcano" type="iwxxm:VolcanoType" substitutionGroup="gml:AbstractGML">
+		<annotation>
+			<documentation>A volcano</documentation>
+		</annotation>
+	</element>
+	<complexType name="VolcanoType">
+		<complexContent>
+			<extension base="gml:AbstractGMLType">
+				<sequence>
+					<element name="name" type="iwxxm:StringWithNilReasonType">
+						<annotation>
+							<documentation>Name of the volcano.</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="VolcanoPropertyType">
+		<sequence minOccurs="0">
+			<element ref="iwxxm:Volcano"></element>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"></attributeGroup>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"></attributeGroup>
+	</complexType>
+	<element name="TropicalCyclone" type="iwxxm:TropicalCycloneType" substitutionGroup="gml:AbstractGML">
+		<annotation>
+			<documentation>A tropical cyclone.</documentation>
+		</annotation>
+	</element>
+	<complexType name="TropicalCycloneType">
+		<complexContent>
+			<extension base="gml:AbstractGMLType">
+				<sequence>
+					<element name="name" type="iwxxm:StringWithNilReasonType">
+						<annotation>
+							<documentation>Name of the tropical cyclone.</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="TropicalCyclonePropertyType">
+		<sequence minOccurs="0">
+			<element ref="iwxxm:TropicalCyclone"></element>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"></attributeGroup>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"></attributeGroup>
+	</complexType>
+	<element name="RadiationIncident" type="iwxxm:RadiationIncidentType" substitutionGroup="gml:AbstractGML">
+		<annotation>
+			<documentation>A radiation incident characterised by the location name and incident time.</documentation>
+		</annotation>
+	</element>
+	<complexType name="RadiationIncidentType">
+		<complexContent>
+			<extension base="gml:AbstractGMLType">
+				<sequence>
+					<element name="siteName" type="iwxxm:StringWithNilReasonType">
+						<annotation>
+							<documentation>Incident location.</documentation>
+						</annotation>
+					</element>
+					<element name="incidentTime" type="gml:TimeInstantPropertyType">
+						<annotation>
+							<documentation>Incident time.</documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="RadiationIncidentPropertyType">
+		<sequence minOccurs="0">
+			<element ref="iwxxm:RadiationIncident"></element>
 		</sequence>
 		<attributeGroup ref="gml:AssociationAttributeGroup"></attributeGroup>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"></attributeGroup>

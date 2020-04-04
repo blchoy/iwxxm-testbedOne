@@ -25,7 +25,7 @@ For ease of maintenance the controlled source are a set of constraints defined t
 							<documentation>The period covering all of the phenomena mentioned in the collective.</documentation>
 						</annotation>
 					</element>
-					<element name="boundingVolume" type="iwxxm:ElevatedEnvelopeType" minOccurs="0" maxOccurs="1">
+					<element name="boundingVolume" type="iwxxm:ElevatedEnvelopePropertyType" minOccurs="0" maxOccurs="1">
 						<annotation>
 							<documentation>The volume containing all of the phenomena mentioned in the collective during the bounding period.</documentation>
 						</annotation>
@@ -200,6 +200,41 @@ The actual featureType to be used in describing the properties shall be constrai
 	<complexType name="ElevatedEnvelopePropertyType">
 		<sequence minOccurs="0">
 			<element ref="iwxxm:ElevatedEnvelope"></element>
+		</sequence>
+		<attributeGroup ref="gml:AssociationAttributeGroup"></attributeGroup>
+		<attributeGroup ref="gml:OwnershipAttributeGroup"></attributeGroup>
+	</complexType>
+	<element name="ElevatedLevel" type="iwxxm:ElevatedLevelType" substitutionGroup="gml:AbstractGeometricPrimitive">
+		<annotation>
+			<documentation>Describes a vertical level in terms of an elevation which can be expressed in metrics commonly used in the aviation domain. </documentation>
+		</annotation>
+	</element>
+	<complexType name="ElevatedLevelType">
+		<complexContent>
+			<extension base="gml:AbstractGeometricPrimitiveType">
+				<sequence>
+					<element name="elevation" type="iwxxm:ValDistanceVerticalType">
+						<annotation>
+							<documentation>The vertical distance of the curve measured from Mean Sea Level (MSL).</documentation>
+						</annotation>
+					</element>
+					<element name="verticalReference" type="aixm:CodeVerticalReferenceBaseType" minOccurs="0" maxOccurs="1">
+						<annotation>
+							<documentation>A code indicating the reference for a vertical distance. Two series of values exist: 1) real distance: from GND, from the MSL, from the WGS-84 ellipsoid; 2) distance based on a difference of pressures, according to the standard atmosphere.</documentation>
+						</annotation>
+					</element>
+					<element name="interpretation" type="aixm:CodeValueInterpretationBaseType" minOccurs="0" maxOccurs="1">
+						<annotation>
+							<documentation>A code indicating how a value needs to be interpreted when used as a filter or condition. For example: above the value or below the value. </documentation>
+						</annotation>
+					</element>
+				</sequence>
+			</extension>
+		</complexContent>
+	</complexType>
+	<complexType name="ElevatedLevelPropertyType">
+		<sequence minOccurs="0">
+			<element ref="iwxxm:ElevatedLevel"></element>
 		</sequence>
 		<attributeGroup ref="gml:AssociationAttributeGroup"></attributeGroup>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"></attributeGroup>
