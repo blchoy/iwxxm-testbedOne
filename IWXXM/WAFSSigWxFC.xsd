@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema elementFormDefault="qualified" targetNamespace="http://icao.int/iwxxm/3.0" version="3.0.0-WAFCSigWx-dev" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns="http://www.w3.org/2001/XMLSchema">
+<schema elementFormDefault="qualified" targetNamespace="http://icao.int/iwxxm/3.0" version="3.0.0-WAFSSigWxFC-dev" xmlns:iwxxm="http://icao.int/iwxxm/3.0" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:aixm="http://www.aixm.aero/schema/5.1.1" xmlns="http://www.w3.org/2001/XMLSchema">
 	<include schemaLocation="iwxxm.xsd"></include>
 	<include schemaLocation="metFeature.xsd"></include>
 	<import namespace="http://www.aixm.aero/schema/5.1.1" schemaLocation="http://www.aixm.aero/schema/5.1.1/AIXM_Features.xsd"></import>
 	<import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"></import>
 	<annotation>
-		<documentation>This package defines a collective and selected meteorological objects for the World Area Forecast Centres (WAFCs) to deliver forecasts of significant en-route weather phenomena as Significant Weather (SIGWX) forecasts.  
+		<documentation>This package defines a collective and selected meteorological objects for the World Area Forecast System (WAFS) to deliver forecasts of significant en-route weather phenomena as Significant Weather (SIGWX) forecasts.  
 
 Class diagrams in this package are the controlled source of the meteorological objects which will also be used to generate Schematron rules for validation of those week-typed properties.</documentation>
 	</annotation>
-	<element name="WAFCSignificantWeatherForecast" type="iwxxm:WAFCSignificantWeatherForecastType" substitutionGroup="iwxxm:MeteorologicalFeatureCollection">
+	<element name="WAFSSignificantWeatherForecast" type="iwxxm:WAFSSignificantWeatherForecastType" substitutionGroup="iwxxm:MeteorologicalFeatureCollection">
 		<annotation>
-			<documentation>Forecasts of significant en-route weather phenomena provided by the World Area Forecast Centres (WAFCs).
+			<documentation>Forecasts of significant en-route weather phenomena provided by the World Area Forecast System (WAFS).
 
 See ICAO Annex 3 / WMO No. 49-2 for details.</documentation>
 		</annotation>
 	</element>
-	<complexType name="WAFCSignificantWeatherForecastType">
+	<complexType name="WAFSSignificantWeatherForecastType">
 		<complexContent>
 			<extension base="iwxxm:MeteorologicalFeatureCollectionType">
 				<sequence>
 					<element name="extension" type="iwxxm:ExtensionType" minOccurs="0" maxOccurs="unbounded">
 						<annotation>
-							<documentation>Extension block for optional and/or additional parameters for element WAFCSignificantWeatherForecast</documentation>
+							<documentation>Extension block for optional and/or additional parameters for element WAFSSignificantWeatherForecast</documentation>
 						</annotation>
 					</element>
 				</sequence>
 			</extension>
 		</complexContent>
 	</complexType>
-	<complexType name="WAFCSignificantWeatherForecastPropertyType">
+	<complexType name="WAFSSignificantWeatherForecastPropertyType">
 		<sequence minOccurs="0">
-			<element ref="iwxxm:WAFCSignificantWeatherForecast"></element>
+			<element ref="iwxxm:WAFSSignificantWeatherForecast"></element>
 		</sequence>
 		<attributeGroup ref="gml:AssociationAttributeGroup"></attributeGroup>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"></attributeGroup>
 	</complexType>
-	<element name="WAFCJetStreamWindSymbol" type="iwxxm:WAFCJetStreamWindSymbolType" substitutionGroup="gml:AbstractGML">
+	<element name="WAFSJetStreamWindSymbol" type="iwxxm:WAFSJetStreamWindSymbolType" substitutionGroup="gml:AbstractGML">
 		<annotation>
-			<documentation>Child element of iwxxm:phenomenonProperty when the parent iwxxm:MeteorologicalFeature is being used to represent a WAFC Jet Stream Wind Symbol.
+			<documentation>Child element of iwxxm:phenomenonProperty when the parent iwxxm:MeteorologicalFeature is being used to represent a WAFS Jet Stream Wind Symbol.
 
 Describes the horizontal wind speed and direction at the point and optionally the elevation of the 80kt isotach below and above the maximum wind speed level if available.</documentation>
 		</annotation>
 	</element>
-	<complexType name="WAFCJetStreamWindSymbolType">
+	<complexType name="WAFSJetStreamWindSymbolType">
 		<complexContent>
 			<extension base="gml:AbstractGMLType">
 				<sequence>
@@ -83,9 +83,9 @@ Wind speeds shall be provided in unit of measurer "m/s" (meters per second).</do
 			</extension>
 		</complexContent>
 	</complexType>
-	<complexType name="WAFCJetStreamWindSymbolPropertyType">
+	<complexType name="WAFSJetStreamWindSymbolPropertyType">
 		<sequence minOccurs="0">
-			<element ref="iwxxm:WAFCJetStreamWindSymbol"></element>
+			<element ref="iwxxm:WAFSJetStreamWindSymbol"></element>
 		</sequence>
 		<attributeGroup ref="gml:AssociationAttributeGroup"></attributeGroup>
 		<attributeGroup ref="gml:OwnershipAttributeGroup"></attributeGroup>

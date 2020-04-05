@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    A sample file for WAFC Weather Objects
+    A sample file for WAFS Weather Objects
     Based on the sample shown on document "Representing WAFS Significant Weather (SIGWX) Data in BUFR"
 -->
-<iwxxm:WAFCSignificantWeatherForecast 
+<iwxxm:WAFSSignificantWeatherForecast 
     xmlns:iwxxm="http://icao.int/iwxxm/3.0"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns:gml="http://www.opengis.net/gml/3.2"
@@ -90,7 +90,7 @@
                 </gml:Curve>
             </iwxxm:phenomenonGeometry>
             <iwxxm:phenomenonProperty>
-                <iwxxm:WAFCJetStreamWindSymbol gml:id="uuid.69a048d7-ba8d-47d5-9e5d-15c658f99e87">
+                <iwxxm:WAFSJetStreamWindSymbol gml:id="uuid.69a048d7-ba8d-47d5-9e5d-15c658f99e87">
                     <iwxxm:location>
                         <iwxxm:ElevatedPoint gml:id="uuid.2efe3eff-3ef0-4817-b2ab-b670417ebb6a" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
                             <gml:pos>36.1 -101.6</gml:pos>
@@ -99,10 +99,10 @@
                         </iwxxm:ElevatedPoint>
                     </iwxxm:location>
                     <iwxxm:windSpeed uom="m/s">51.5</iwxxm:windSpeed>
-                </iwxxm:WAFCJetStreamWindSymbol>
+                </iwxxm:WAFSJetStreamWindSymbol>
             </iwxxm:phenomenonProperty>
             <iwxxm:phenomenonProperty>
-                <iwxxm:WAFCJetStreamWindSymbol gml:id="uuid.1bf0cb18-199d-4467-865d-3e8c4923de96">
+                <iwxxm:WAFSJetStreamWindSymbol gml:id="uuid.1bf0cb18-199d-4467-865d-3e8c4923de96">
                     <iwxxm:location>
                         <iwxxm:ElevatedPoint gml:id="uuid.b40fe04a-174f-4dac-94b4-987c4d729de4" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
                             <gml:pos>36.9 -97.7</gml:pos>
@@ -115,10 +115,10 @@
                     <iwxxm:IsotachUpperVerticalReference>MSL</iwxxm:IsotachUpperVerticalReference>
                     <iwxxm:IsotachLowerElevation uom="M">13716</iwxxm:IsotachLowerElevation>
                     <iwxxm:IsotachLowerVerticalReference>MSL</iwxxm:IsotachLowerVerticalReference>
-                </iwxxm:WAFCJetStreamWindSymbol>
+                </iwxxm:WAFSJetStreamWindSymbol>
             </iwxxm:phenomenonProperty>
             <iwxxm:phenomenonProperty>
-                <iwxxm:WAFCJetStreamWindSymbol gml:id="uuid.f9847b29-2d86-4bda-b69b-d3fae1e29e43">
+                <iwxxm:WAFSJetStreamWindSymbol gml:id="uuid.f9847b29-2d86-4bda-b69b-d3fae1e29e43">
                     <iwxxm:location>
                         <iwxxm:ElevatedPoint gml:id="uuid.1b2dd415-451d-4f04-bd67-794ed859f845" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
                             <gml:pos>38.3 -92.3</gml:pos>
@@ -127,10 +127,10 @@
                         </iwxxm:ElevatedPoint>
                     </iwxxm:location>
                     <iwxxm:windSpeed uom="m/s">51.5</iwxxm:windSpeed>
-                </iwxxm:WAFCJetStreamWindSymbol>
+                </iwxxm:WAFSJetStreamWindSymbol>
             </iwxxm:phenomenonProperty>
             <iwxxm:phenomenonProperty>
-                <iwxxm:WAFCJetStreamWindSymbol gml:id="uuid.06af45b6-4852-41e0-b211-5aa6daa03f83">
+                <iwxxm:WAFSJetStreamWindSymbol gml:id="uuid.06af45b6-4852-41e0-b211-5aa6daa03f83">
                     <iwxxm:location>
                         <iwxxm:ElevatedPoint gml:id="uuid.f26f3ec6-ec91-4770-b04e-f9097a02cb19" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
                             <gml:pos>40.7 -88.1</gml:pos>
@@ -143,10 +143,10 @@
                     <iwxxm:IsotachUpperVerticalReference>MSL</iwxxm:IsotachUpperVerticalReference>
                     <iwxxm:IsotachLowerElevation uom="M">14326</iwxxm:IsotachLowerElevation>
                     <iwxxm:IsotachLowerVerticalReference>MSL</iwxxm:IsotachLowerVerticalReference>
-                </iwxxm:WAFCJetStreamWindSymbol>
+                </iwxxm:WAFSJetStreamWindSymbol>
             </iwxxm:phenomenonProperty>
             <iwxxm:phenomenonProperty>
-                <iwxxm:WAFCJetStreamWindSymbol gml:id="uuid.c6ccf151-6a61-479d-b316-bdab7a27bfcc">
+                <iwxxm:WAFSJetStreamWindSymbol gml:id="uuid.c6ccf151-6a61-479d-b316-bdab7a27bfcc">
                     <iwxxm:location>
                         <iwxxm:ElevatedPoint gml:id="uuid.2e67726d-b5f4-4805-bae8-a45f18c34d22" srsDimension="2" axisLabels="Lat Long" srsName="http://www.opengis.net/def/ers/EPSG/0/4326">
                             <gml:pos>42.0 -82.7</gml:pos>
@@ -155,7 +155,7 @@
                         </iwxxm:ElevatedPoint>
                     </iwxxm:location>
                     <iwxxm:windSpeed uom="m/s">51.5</iwxxm:windSpeed>
-                </iwxxm:WAFCJetStreamWindSymbol>
+                </iwxxm:WAFSJetStreamWindSymbol>
             </iwxxm:phenomenonProperty>
         </iwxxm:MeteorologicalFeature>
     </iwxxm:feature>
@@ -343,4 +343,4 @@
     <!-- An online feature -->
     <iwxxm:feature xlink:href="http://online-resource-of-features?object-reference=60ae20bf-8d5c-4da9-b9a0-71a1395df670"/>
     
-</iwxxm:WAFCSignificantWeatherForecast>
+</iwxxm:WAFSSignificantWeatherForecast>
